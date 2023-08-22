@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&family=Nunito:wght@200;300;400;500;600&family=Roboto&family=Ubuntu:wght@300;400;500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: linear-gradient(to right, #36d1dc, #5b86e5);
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+	height: 400px;
+	width: 100%;
+	border-radius: 1.25rem;
+	z-index: 3;
+	margin: 0 15px 20px 0px;
+	padding: 5px 20px 20px;
+}
+
+.wrapper .logo {
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	margin: 30px ;
+	font-family: inherit;
+}
+
+.box {
+	display: grid;
+	gap: 18px;
+	margin: 0 0 30px;
+	position: relative;
+}
+
+.box > input {
+	height: 45px;
+	width: 100%;
+	border-radius: 20px;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 0 24px;
+	border: 2px solid #ebebebeb;
+}
+
+.box > #user {
+	position: absolute;
+	right: 20px;
+	top: 13px;
+	font-size: 20px;
+	color: #6a6a6afa;
+}
+
+.box > #lock {
+	position: absolute;
+	right: 20px;
+	top: 75px;
+	font-size: 20px;
+	color: #6a6a6afa;
+}
+
+.box > #lock_2 {
+	position: absolute;
+	right: 20px;
+	top: 138px;
+	font-size: 20px;
+	color: #6a6a6afa;
+}
+
+.btn {
+	height: 50px;
+	width: 100%;
+	border-radius: 20px;
+	border: none;
+	background: linear-gradient(to right,#2193b0, #6dd5ed);
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top: -45px;
+}
+
+.btn > a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+.btn:hover {
+	height: 50px;
+	width: 100%;
+	border-radius: 20px;
+	border: none;
+	background: linear-gradient(to left,#2193b0, #6dd5ed);
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-top:  -45px;
+}
+
+.remember-forgot {
+	display: flex; 
+	justify-content: space-between;
+	margin-bottom: 35px;
+	padding: 0 6px	;
+}
+
+@media (width >= 500pc) {
+	body {
+		padding: 0;
+	}
+
+	.wrapper {
+		margin: 0;
+		width: 400px;
+	}
+}
